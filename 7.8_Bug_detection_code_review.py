@@ -1,5 +1,14 @@
-i = 1
-while i <= 100:
-    if i % 7 == 0:
-        print(i)
-    i += 1
+s = input()
+
+while len(s) <= 10:
+    if len(s) % 4 == 0:
+        s = 'x' + s
+        print(s)
+    elif len(s) % 5 == 0:
+        s = 'y' + s
+        print(s)
+    else:
+        s = 'zzz' + s
+        print(s)
+
+    s = '@' + s
